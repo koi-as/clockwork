@@ -1,3 +1,21 @@
-body header nav ul a{
-  color: #f00;
+/* vars for copied styles */
+:root {
+  /* add vars if needed */
+}
+
+/* universal styles */
+* {
+  color: #222;
+}
+
+/* html {} */
+/* body {} */
+
+/* header styles */
+header {
+  display: flex;
+}
+
+header h1 {
+  font-size: 3em;
 }

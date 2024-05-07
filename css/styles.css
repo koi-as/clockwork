@@ -1,25 +1,32 @@
 /* vars for copied styles */
 :root {
-  /* add vars if needed */
-  --color1: #413c58;
-  --color2: #a3c4bc;
-  --color3: #bfd7b5;
-  --color4: #e7efc5;
-  --color5: #f2e7c9;
+  /* color set 1 */
+  --color0: #413c58;
+  --color1: #a3c4bc;
+  --color2: #bfd7b5;
+  --color3: #e7efc5;
+  --color4: #f2e7c9;
+  /* color set 2 */
+  --color5: #2f2d2e;
+  --color6: #41292c;
+  --color7: #792359;
+  --color8: #d72483;
+  --color9: #fd3e81;
 }
 
 /* universal styles */
-* {
-  /* color: #222; */
-}
+/* * {} */
 
 /* html {} */
-/* body {} */
+
+body {
+  background: var(--color5);
+}
 
 /* header styles */
 header {
   /* lettering */
-  color: var(--color1);
+  color: var(--color9);
   /* flex */
   display: flex;
   align-items: flex-end;
@@ -47,11 +54,18 @@ header nav {
 
 header ul li {
   display: inline-flex;
+  /* spacing */
+  border: 1px solid var(--color7);
   padding: 0px 10px 0px;
+}
+
+header ul li:hover {
+  background: var(--color7);
 }
 
 header a {
   color: var(--color1);
+  text-decoration: none;
 }
 
 header a:visited {
@@ -59,5 +73,5 @@ header a:visited {
 }
 
 header a:hover {
-  color: var(--color2);
+  color: var(--color9);
 }

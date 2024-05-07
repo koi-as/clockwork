@@ -14,8 +14,27 @@
 /* header styles */
 header {
   display: flex;
+  align-items: flex-end;
+  margin: auto;
+}
+
+header h1,
+header nav,
+header nav ul {
+  padding: 10px;
 }
 
 header h1 {
   font-size: 3em;
+}
+
+header nav {
+  width: 50%;
+}
+
+/* header ul  */
+
+header ul li {
+  display: inline-flex;
+  padding: 0px 10px 0px;
 }

@@ -54,18 +54,19 @@ header nav {
 
 header ul li {
   display: inline-flex;
-  /* spacing */
-  border: 1px solid var(--color7);
-  padding: 0px 10px 0px;
-}
-
-header ul li:hover {
-  background: var(--color7);
 }
 
 header a {
+  background: var(--color6);
+  
+  /* lettering */
   color: var(--color1);
   text-decoration: none;
+  /* spacing */
+  border: 1px solid var(--color7);
+  border-radius: 25px;
+  padding: 0px 10px 0px;
+  width: 50px;
 }
 
 header a:visited {
@@ -73,5 +74,6 @@ header a:visited {
 }
 
 header a:hover {
+  background: var(--color7);
   color: var(--color9);
 }

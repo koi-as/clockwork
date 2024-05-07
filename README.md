@@ -10,6 +10,6 @@ Nothing just yet :)
 
 ## Credits
 
-GitHub: <a href='https://github.com/koi-as'>koi-as</a>
-Discord: <a href='https://discord.gg/j7v3ekPFZN'>__koi_</a>
+GitHub: <a href='https://github.com/koi-as'>koi-as</a> <br>
+Discord: <a href='https://discord.gg/j7v3ekPFZN'>__koi_</a> <br>
 LinkdIn: <a href='https://www.linkedin.com/in/alex-koi-seidensticker/'>Alex S</a>

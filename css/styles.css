@@ -1,11 +1,16 @@
 /* vars for copied styles */
 :root {
   /* add vars if needed */
+  --color1: #413c58;
+  --color2: #a3c4bc;
+  --color3: #bfd7b5;
+  --color4: #e7efc5;
+  --color5: #f2e7c9;
 }
 
 /* universal styles */
 * {
-  color: #222;
+  /* color: #222; */
 }
 
 /* html {} */
@@ -13,9 +18,46 @@
 
 /* header styles */
 header {
+  /* lettering */
+  color: var(--color1);
+  /* flex */
   display: flex;
+  align-items: flex-end;
+  /* spacing */
+  margin: auto;
+}
+
+header h1,
+header nav,
+header nav ul {
+  /* spacing */
+  padding-left: 10px;
 }
 
 header h1 {
+  /* lettering */
   font-size: 3em;
+}
+
+header nav {
+  width: 50%;
+}
+
+/* header ul  */
+
+header ul li {
+  display: inline-flex;
+  padding: 0px 10px 0px;
+}
+
+header a {
+  color: var(--color1);
+}
+
+header a:visited {
+  color: var(--color3);
+}
+
+header a:hover {
+  color: var(--color2);
 }

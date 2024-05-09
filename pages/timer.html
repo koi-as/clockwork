@@ -23,9 +23,26 @@
     </nav>
   </header>
 
+  <aside>
+    <details>
+      <summary>Timer Settings</summary>
+      <form method="get">
+        <input id="hoursInput" type="number" min="0" max="99">
+        <input id="minutesInput" type="number" min="0" max="59">
+        <input id="secondsInput" type="number" min="0" max="59">
+        <!-- <button onclick="setInterval(timerExecution, 1000)">Start Timer</button> -->
+      </form>
+    </details>
+  </aside>
+
   <main>
-    Timer page
+    <p id="timerDisplay"></p>
   </main>
+
+  <footer>
+
+  </footer>
+  <script src="../js/timer.js"></script>
 </body>
 
 </html>

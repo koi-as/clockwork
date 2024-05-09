@@ -6,4 +6,6 @@ function clockExecution() {
   document.getElementById('clockDisplay').innerHTML = d.toLocaleTimeString();
 }
 
+setInterval(clockExecution, 1000);
+
 // timer functions

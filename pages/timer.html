@@ -23,6 +23,18 @@
     </nav>
   </header>
 
+  <aside>
+    <details>
+      <summary>Timer Settings</summary>
+      <form method="get">
+        <input id="hoursInput" type="number" min="0" max="99">
+        <input id="minutesInput" type="number" min="0" max="59">
+        <input id="secondsInput" type="number" min="0" max="59">
+        <button>Start Timer</button>
+      </form>
+    </details>
+  </aside>
+
   <main>
     <p id="timerDisplay"></p>
   </main>

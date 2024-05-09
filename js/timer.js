@@ -1,15 +1,13 @@
-console.log('hi');
-
 // timer functions
-let s = /*document.getElementById('secondsInput').value; */ 59;
+
+// vars that take info input by user to create timer
+let s = /*document.getElementById('secondsInput').value; */ 59; // using test numbers
 let m = /*document.getElementById('minutesInput').value;*/5;
 let h = /*document.getElementById('hoursInput').value;*/0;
-console.log(s);
-console.log(m);
-console.log(h);
 
 setInterval(timerExecution, 1000)
 
+// using setInterval(), this counts down the timer
 function timerExecution() {
   if (s > 0) {
     s--;
@@ -24,10 +22,11 @@ function timerExecution() {
     h--;
     format();
   } else if (s == 0 && m == 0 && h == 0) {
-    endtimer();
+    endTimer();
   }
 }
 
+// formats timer to show a "0" when number displayed is in 1s digit
 function format() {
   if (s < 10 && m < 10 && h < 10) {
     document.getElementById('timerDisplay').innerHTML = '0' + h + ":" + '0' + m + ":" + '0' + s
@@ -46,4 +45,11 @@ function format() {
   } else {
     document.getElementById('timerDisplay').innerHTML = h + ":" + m + ":" + s
   }
+}
+
+// notifies user the timer has finished
+function endTimer() {
+  // sound effect
+  // visual effect
+  // notification
 }

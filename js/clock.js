@@ -1,3 +1,5 @@
+console.log('hello')
+
 // clock functions
 function clockExecution() {
   const d = new Date();

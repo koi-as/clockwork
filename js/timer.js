@@ -1,3 +1,5 @@
+console.log('hi');
+
 // timer functions
 let s = document.getElementById('secondsInput');
 let m = document.getElementById('minutesInput');

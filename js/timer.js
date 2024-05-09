@@ -1,9 +1,14 @@
 console.log('hi');
 
 // timer functions
-let s = document.getElementById('secondsInput');
-let m = document.getElementById('minutesInput');
-let h = document.getElementById('hoursInput');
+let s = /*document.getElementById('secondsInput').value; */ 59;
+let m = /*document.getElementById('minutesInput').value;*/5;
+let h = /*document.getElementById('hoursInput').value;*/0;
+console.log(s);
+console.log(m);
+console.log(h);
+
+setInterval(timerExecution, 1000)
 
 function timerExecution() {
   if (s > 0) {

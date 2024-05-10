@@ -41,6 +41,6 @@ function endTimer() {
   clearInterval(interval);
 }
 
-function masterFunction() { 
+window.onload = function masterFunction() { 
   document.getElementById('timerDisplay').innerHTML = '00' + ":" + '00' + ":" + '00';
 }

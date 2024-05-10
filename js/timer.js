@@ -1,11 +1,11 @@
 // timer functions
 
 // vars that take info input by user to create timer
-let s = /*document.getElementById('secondsInput').value; */ 59; // using test numbers
-let m = /*document.getElementById('minutesInput').value;*/5;
+let s = /*document.getElementById('secondsInput').value; */ 9; // using test numbers
+let m = /*document.getElementById('minutesInput').value;*/0;
 let h = /*document.getElementById('hoursInput').value;*/0;
 
-setInterval(timerExecution, 1000)
+let interval = setInterval(timerExecution, 1000)
 
 // using setInterval(), this counts down the timer
 function timerExecution() {
@@ -28,32 +28,15 @@ function timerExecution() {
 
 // formats timer to show a "0" when number displayed is in 1s digit
 function format() {
-  // if (s < 10 && m < 10 && h < 10) {
-  //   document.getElementById('timerDisplay').innerHTML = '0' + h + ":" + '0' + m + ":" + '0' + s
-  // } else if (m < 10 && h < 10) {
-  //   document.getElementById('timerDisplay').innerHTML = '0' + h + ":" + '0' + m + ":" + s
-  // } else if (s < 10 && h < 10) {
-  //   document.getElementById('timerDisplay').innerHTML = '0' + h + ":" + m + ":" + '0' + s
-  // } else if (s < 10 && m < 10) {
-  //   document.getElementById('timerDisplay').innerHTML = h + ":" + '0' + m + ":" + '0' + s
-  // } else if (h < 10) {
-  //   document.getElementById('timerDisplay').innerHTML = '0' + h + ":" + m + ":" + s
-  // } else if (m < 10) {
-  //   document.getElementById('timerDisplay').innerHTML = h + ":" + '0' + m + ":" + s
-  // } else if (s < 10) {
-  //   document.getElementById('timerDisplay').innerHTML = h + ":" + m + ":" + '0' + s
-  // } else {
-  //   document.getElementById('timerDisplay').innerHTML = h + ":" + m + ":" + s
-  // }
   var newS = (s < 10) ? '0' + s : s;
   var newM = (m < 10) ? '0' + m : m;
   var newH = (h < 10) ? '0' + h : h;
-  document.getElementById('timerDisplay').innerHTML = newH + ":" + newM + ":" + newS
+  document.getElementById('timerDisplay').innerHTML = newH + ":" + newM + ":" + newS;
 }
 
 // notifies user the timer has finished
 function endTimer() {
-  // sound effect
-  // visual effect
-  // notification
+  alert('Timer has ended');
+  // add some kind of noise or notification or effect to better signal the end of the timer
+  clearInterval(interval);
 }

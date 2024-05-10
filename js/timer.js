@@ -2,7 +2,7 @@
 
 // vars that take info input by user to create timer
 let s = /*document.getElementById('secondsInput').value; */ 9; // using test numbers
-let m = /*document.getElementById('minutesInput').value;*/0;
+let m = /*document.getElementById('minutesInput').value;*/9;
 let h = /*document.getElementById('hoursInput').value;*/0;
 
 let interval = setInterval(timerExecution, 1000)
@@ -39,4 +39,8 @@ function endTimer() {
   alert('Timer has ended');
   // add some kind of noise or notification or effect to better signal the end of the timer
   clearInterval(interval);
+}
+
+function masterFunction() { 
+  document.getElementById('timerDisplay').innerHTML = '00' + ":" + '00' + ":" + '00';
 }

@@ -2,7 +2,7 @@
 
 // vars that take info input by user to create timer
 let s = /*document.getElementById('secondsInput').value;*/ 9; // using test numbers
-let m = /*document.getElementById('minutesInput').value;*/9;
+let m = /*document.getElementById('minutesInput').value;*/0;
 let h = /*document.getElementById('hoursInput').value;*/0;
 
 function startTimer() {

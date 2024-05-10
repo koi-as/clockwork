@@ -28,23 +28,27 @@ function timerExecution() {
 
 // formats timer to show a "0" when number displayed is in 1s digit
 function format() {
-  if (s < 10 && m < 10 && h < 10) {
-    document.getElementById('timerDisplay').innerHTML = '0' + h + ":" + '0' + m + ":" + '0' + s
-  } else if (m < 10 && h < 10) {
-    document.getElementById('timerDisplay').innerHTML = '0' + h + ":" + '0' + m + ":" + s
-  } else if (s < 10 && h < 10) {
-    document.getElementById('timerDisplay').innerHTML = '0' + h + ":" + m + ":" + '0' + s
-  } else if (s < 10 && m < 10) {
-    document.getElementById('timerDisplay').innerHTML = h + ":" + '0' + m + ":" + '0' + s
-  } else if (h < 10) {
-    document.getElementById('timerDisplay').innerHTML = '0' + h + ":" + m + ":" + s
-  } else if (m < 10) {
-    document.getElementById('timerDisplay').innerHTML = h + ":" + '0' + m + ":" + s
-  } else if (s < 10) {
-    document.getElementById('timerDisplay').innerHTML = h + ":" + m + ":" + '0' + s
-  } else {
-    document.getElementById('timerDisplay').innerHTML = h + ":" + m + ":" + s
-  }
+  // if (s < 10 && m < 10 && h < 10) {
+  //   document.getElementById('timerDisplay').innerHTML = '0' + h + ":" + '0' + m + ":" + '0' + s
+  // } else if (m < 10 && h < 10) {
+  //   document.getElementById('timerDisplay').innerHTML = '0' + h + ":" + '0' + m + ":" + s
+  // } else if (s < 10 && h < 10) {
+  //   document.getElementById('timerDisplay').innerHTML = '0' + h + ":" + m + ":" + '0' + s
+  // } else if (s < 10 && m < 10) {
+  //   document.getElementById('timerDisplay').innerHTML = h + ":" + '0' + m + ":" + '0' + s
+  // } else if (h < 10) {
+  //   document.getElementById('timerDisplay').innerHTML = '0' + h + ":" + m + ":" + s
+  // } else if (m < 10) {
+  //   document.getElementById('timerDisplay').innerHTML = h + ":" + '0' + m + ":" + s
+  // } else if (s < 10) {
+  //   document.getElementById('timerDisplay').innerHTML = h + ":" + m + ":" + '0' + s
+  // } else {
+  //   document.getElementById('timerDisplay').innerHTML = h + ":" + m + ":" + s
+  // }
+  var newS = (s < 10) ? '0' + s : s;
+  var newM = (m < 10) ? '0' + m : m;
+  var newH = (h < 10) ? '0' + h : h;
+  document.getElementById('timerDisplay').innerHTML = newH + ":" + newM + ":" + newS
 }
 
 // notifies user the timer has finished

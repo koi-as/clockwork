@@ -4,7 +4,7 @@
 // for future development: create time and set to vars so user can change display as they like
 function clockExecution() {
   const d = new Date();
-  document.getElementById('clockDisplay').innerHTML = d.toLocaleTimeString();
+  document.getElementById('time').innerHTML = d.toLocaleTimeString();
 }
 
 // setInterval automatically update clock

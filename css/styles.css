@@ -115,14 +115,14 @@ aside {
   grid-area: qset;
 }
 
-.clock {
+#time {
   grid-area: clock;
   text-align: center;
   margin: auto;
   font-size: 25em;
 }
 
-.balance {
+#balance {
   grid-area: bal;
 }
 

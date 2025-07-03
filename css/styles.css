@@ -24,14 +24,16 @@
 body {
   background: var(--color5);
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     "header nav"
-    "qset clock"
+    "clock clock"
     "footer footer";
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 10fr .5fr;
   gap: 5px;
   padding: 5px;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* header styles */
@@ -40,6 +42,7 @@ header {
   color: var(--color9);
   font-family: var(--fontFamily);
   /* spacing */
+  grid-area: header;
   margin: auto;
 }
 
@@ -53,21 +56,22 @@ header nav ul {
 header h1 {
   /* lettering */
   font-size: 3em;
-  grid-area: header;
+  /* grid-area: header; */
 }
 
-header nav {
+/* nav styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
   grid-area: nav;
-  width: 50%;
 }
 
-/* header ul  */
-
-header ul li {
-  /* display: inline-flex; */
+ul li {
+  display: inline-flex;
 }
 
-header a {
+a {
   background: var(--color6);
   /* lettering */
   color: var(--color1);
@@ -84,13 +88,24 @@ header a {
   width: 75px;
 }
 
-header a:visited {
+a:visited {
   color: var(--color1);
 }
 
-header a:hover {
+a:hover {
   background: var(--color7);
   color: var(--color9);
+}
+
+/* main styles */
+main {
+  border: 2px solid var(--color4);
+  color: #fff;
+  display: grid;
+  grid-area: clock;
+  grid-template-areas: "qset clock bal";
+  grid-template-columns: 1fr 6fr 1fr;
+  gap: 5px;
 }
 
 /* aside styles */
@@ -100,11 +115,15 @@ aside {
   grid-area: qset;
 }
 
-/* main styles */
 .clock {
-  border: 2px solid var(--color4);
-  color: #fff;
   grid-area: clock;
+  text-align: center;
+  margin: auto;
+  font-size: 25em;
+}
+
+.balance {
+  grid-area: bal;
 }
 
 /* footer styles */

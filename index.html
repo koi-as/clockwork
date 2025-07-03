@@ -31,9 +31,29 @@
         <summary>Quick Settings</summary>
         <ul>
           <!-- buttons/dropdowns? -->
-          <li>Change Time Format [12hr/24hr]</li>
-          <li>Change Date Format [dd/mm/yy]</li>
-          <li>Change Font [helvetica/tnr]</li>
+          <li>Change Time Format [12hr/24hr]
+            <select name="timeFormat" id="timeFormat">
+              <option value="default">-- Select Time Notation --</option>
+              <option value="12hr">12 hour notation</option>
+              <option value="24hr">24 hour notation</option>
+            </select>
+          </li>
+          <li>Change Date Format [dd/mm/yy]
+            <select name="dateFormat" id="dateFormat">
+              <option value="default">-- Select Date Format --</option>
+              <option value="dmy">dd/mm/yyyy</option>
+              <option value="mdy">mm/dd/yyyy</option>
+              <option value="ymd">yyyy/mm/dd</option>
+            </select>
+          </li>
+          <li>Change Font [helvetica/tnr]
+            <select name="fontSelect" id="fontSelect">
+              <option value="default">-- Select Font --</option>
+              <option value="font1">preset 1</option>
+              <option value="font2">preset 2</option>
+              <option value="fontx">preset x</option>
+            </select>
+          </li>
         </ul>
       </details>
     </aside>

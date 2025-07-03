@@ -34,7 +34,7 @@ function format() {
   var newS = (s < 10) ? '0' + s : s;
   var newM = (m < 10) ? '0' + m : m;
   var newH = (h < 10) ? '0' + h : h;
-  document.getElementById('timerDisplay').innerHTML = newH + ":" + newM + ":" + newS;
+  document.getElementById('time').innerHTML = newH + ":" + newM + ":" + newS;
 }
 
 // notifies user the timer has finished

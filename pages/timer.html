@@ -13,30 +13,31 @@
 <body>
   <header>
     <h1>Clockwork</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./clock.html">Clock</a></li>
-        <li><a href="./timer.html">Timer</a></li>
-        <li><a href="./settings.html">Settings</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <aside>
-    <details>
-      <summary>Timer Settings</summary>
-      <!-- <form method="get"> -->
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./clock.html">Clock</a></li>
+      <li><a href="./timer.html">Timer</a></li>
+      <li><a href="./settings.html">Settings</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <aside>
+      <details>
+        <summary>Timer Settings</summary>
+        <!-- <form method="get"> -->
         <input id="hoursInput" type="number" min="0" max="99">
         <input id="minutesInput" type="number" min="0" max="59">
         <input id="secondsInput" type="number" min="0" max="59">
         <button onclick="startTimer()">Start Timer</button>
-      <!-- </form> -->
-    </details>
-  </aside>
-
-  <main>
-    <p id="timerDisplay"></p>
+        <!-- </form> -->
+      </details>
+    </aside>
+    <div id="time"></div>
+    <div id="balance"></div>
   </main>
 
   <footer>
